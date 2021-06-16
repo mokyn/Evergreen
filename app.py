@@ -58,7 +58,18 @@ def index():
     if request.method=='POST':
         inputProgress = int(request.form['text'])
         User.update_progress(current_user.id, inputProgress)
-        return ("<p>Progress updated</p>")
+        current_user.progress= inputProgress
+        return (
+            "<p>Hello, {}! You're logged in! Email: {}</p>"
+            "<div><p>Google Profile Picture:</p>"
+            '<img src="{}" alt="Google profile pic"></img></div>'
+            '<a class="button" href="/logout">Logout</a>'
+            '<p>Your progress is {}</p>'
+            '<form method=post enctype="multipart/form-data"><label>Progress:</label><input type=text name=text></form>'
+            ''.format(
+                current_user.name, current_user.email, current_user.profile_pic, current_user.progress
+            )
+        )
     if current_user.is_authenticated:
         return (
             "<p>Hello, {}! You're logged in! Email: {}</p>"
