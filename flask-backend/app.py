@@ -158,6 +158,10 @@ def callback():
     # Send user back to homepage
     return redirect(url_for("index"))
 
+@app.route("/game")
+def game():
+    return flask.render_template("game.html")
+
 @app.route("/logout")
 @login_required
 def logout():
