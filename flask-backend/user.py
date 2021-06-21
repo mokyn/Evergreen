@@ -36,7 +36,6 @@ class User(UserMixin):
     
     @staticmethod
     def update_progress(id, new_progress):
-        print(new_progress)
         db = get_db()
         db.execute(
             "UPDATE user "
