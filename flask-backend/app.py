@@ -4,7 +4,7 @@ import os
 import sqlite3
 
 # Third-party libraries
-from flask import Flask, redirect, request, url_for
+from flask import Flask, redirect, request, url_for, render_template
 from flask_login import (
     LoginManager,
     current_user,
@@ -66,6 +66,7 @@ def index():
             '<a class="button" href="/logout">Logout</a>'
             '<p>Your progress is {}</p>'
             '<form method=post enctype="multipart/form-data"><label>Progress:</label><input type=text name=text></form>'
+            '<a href="/game">Play game</a>'
             ''.format(
                 current_user.name, current_user.email, current_user.profile_pic, current_user.progress
             )
@@ -78,6 +79,7 @@ def index():
             '<a class="button" href="/logout">Logout</a>'
             '<p>Your progress is {}</p>'
             '<form method=post enctype="multipart/form-data"><label>Progress:</label><input type=text name=text></form>'
+            '<a href="/game">Play game</a>'
             ''.format(
                 current_user.name, current_user.email, current_user.profile_pic, current_user.progress
             )
@@ -160,7 +162,7 @@ def callback():
 
 @app.route("/game")
 def game():
-    return flask.render_template("game.html")
+    return render_template("index.html")
 
 @app.route("/logout")
 @login_required

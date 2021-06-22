@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/react/static/css/main.6d2df071.chunk.css",
+    "main.js": "/static/react/static/js/main.070c315f.chunk.js",
+    "main.js.map": "/static/react/static/js/main.070c315f.chunk.js.map",
+    "runtime-main.js": "/static/react/static/js/runtime-main.b47aba6c.js",
+    "runtime-main.js.map": "/static/react/static/js/runtime-main.b47aba6c.js.map",
+    "static/js/2.078b4d5d.chunk.js": "/static/react/static/js/2.078b4d5d.chunk.js",
+    "static/js/2.078b4d5d.chunk.js.map": "/static/react/static/js/2.078b4d5d.chunk.js.map",
+    "index.html": "/static/react/index.html",
+    "static/css/main.6d2df071.chunk.css.map": "/static/react/static/css/main.6d2df071.chunk.css.map",
+    "static/js/2.078b4d5d.chunk.js.LICENSE.txt": "/static/react/static/js/2.078b4d5d.chunk.js.LICENSE.txt",
+    "static/media/background.dea6d3c6.jpg": "/static/react/static/media/background.dea6d3c6.jpg",
+    "static/media/bee.ffdfa50e.png": "/static/react/static/media/bee.ffdfa50e.png",
+    "static/media/ladybug.c24447a0.png": "/static/react/static/media/ladybug.c24447a0.png",
+    "static/media/mite.d75bc2db.png": "/static/react/static/media/mite.d75bc2db.png",
+    "static/media/slug.d3f61490.png": "/static/react/static/media/slug.d3f61490.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b47aba6c.js",
+    "static/js/2.078b4d5d.chunk.js",
+    "static/css/main.6d2df071.chunk.css",
+    "static/js/main.070c315f.chunk.js"
+  ]
+}
